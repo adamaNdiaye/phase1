@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.jumbotron{
+    background-image: url(https://voyage-onirique.com/wp-content/uploads/2018/09/722737.jpg) ;
+    background-repeat: no-repeat;
+    
+    
+}
+
+    
+
+h1{
+    color: white;
+    
+}
+
+.paragraphe{
+    color:white;
+    font-weight: bold;
+}
+nav a{
+    color:white;
+    text-decoration: none;
+}
+a:hover{
+    color:brown ;
+}
+.vertical li{
+    display: inline;
+}
+.inline{
+    display: inline;
+}
+h1{
+    color: brown;
+    font-size: 30px ;
+    text-align: center;
+}
+.jumbotron2{
+    background-image: url()
+}
+.margin{
+    margin-left: 30px;
+}

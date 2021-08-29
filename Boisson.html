@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+     
+    
+    <link rel="stylesheet" href="Boissons.css">
+    <title>Nos boissons</title>
+</head>
+<body>
+    <div class="container-fluid mt-5">
+        <h2 class="mb-5 text-center"> Une petite soif ? Come here !</h2>
+        <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="table-responsive">
+                <table id="myTable" class="table">
+                    <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Name</th>
+                        <th>Qty</th>
+                        <th>Price</th>
+                        <th class="text-right">
+                            <span id="amount" class="amount">Amount</span>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr id="tr1">
+                        <td>
+                            <div class="product-img">
+                                <div class="img-prdct">
+                                    <img src="https://cdn.radiofrance.fr/s3/cruiser-production/2019/10/c8c65e5d-717b-4d93-a327-8a30b9b0d489/870x489_maxstockworld172560.jpg" alt="">
+                                </div>
+
+                            </div>
+                        </td>
+                        <td>
+                            <p>Eau minérale</p>
+                        </td>
+                        <td>
+                            <div class="button-container" id="btn-ctn1">
+                                <button class="cart-qty-plus" type="button" value="+" onclick="increment1()">+</button>
+                                <input type="text" name="qty" min="0" class="qty1 form-control" value="0"/>
+                                <button class="cart-qty-minus" type="button" value="-" onclick="decrement1()">-</button>
+                            </div>
+                            <div class=" pt-3 text-center">
+                                <a class="heart" id="heart1" onclick="change1()"><i class="far fa-heart"></i></a>
+                               </div>
+                        </td>
+                        <td>
+                            <input type="text" value="1000" class="price1 form-control" disabled>
+                        </td>
+                        <td align="right">F <span id="amount" class="amount1">0</span>
+                        </td>
+                    </tr>
+                    <!---- add more tr  ---------->
+                    <tr>
+                        <td>
+                           <div class="product-img">
+                              <div class="img-prdct">
+                                  <img src="https://savoiraimer.eu/wp-content/uploads/2020/02/boissons-gazeuses-ruines-dentition-os-sante-4.jpg" alt="">
+                              </div>
+                           </div>
+                        </td>
+                        <td>
+                           <p> Boissons gazeuse</p>
+                        </td>
+                        <td>
+                           <div class="button-container">
+                              <button class="cart-qty-plus" type="button" value="+" onclick="increment2()">+</button>
+                              <input type="text" name="qty" min="0" class="qty2 form-control" value="0"/>
+                              <button class="cart-qty-minus" type="button" value="-" onclick="decrement2()">-</button>
+                           </div>
+
+                           <div class=" pt-3 text-center">
+                            <a class="heart" id="heart2" onclick="change2()"><i class="far fa-heart"></i></a>
+                           </div>
+                        </td>
+                        <td>
+                           <input type="text" value="800" class="price2 form-control" disabled>
+                        </td>
+                        <td align="right">F <span id="amount" class="amount2">0</span>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <div class="product-img">
+                              <div class="img-prdct">
+                                  <img src="https://jardindegrandmere.com/wp-content/uploads/2019/11/jusfruitsmoothiesucre.jpg" alt="">
+                              </div>
+                           </div>
+                        </td>
+                        <td>
+                           <p>Jus de fruits</p>
+                        </td>
+                        <td>
+                           <div class="button-container">
+                              <button class="cart-qty-plus" type="button" value="+" onclick="increment3()">+</button>
+                              <input type="text" name="qty" min="0" class="qty3 form-control" value="0"/>
+                              <button class="cart-qty-minus" type="button" value="-" onclick="decrement3()">-</button>
+                              
+                           </div>
+
+                           <div class=" pt-3 text-center">
+                            <a class="heart" id="heart3" onclick="change3()"><i class="far fa-heart"></i></a>
+                           </div>
+        
+                        </td>
+                        <td>
+                           <input type="text" value="1000" class="price3 form-control" disabled>
+                        </td>
+                        <td align="right">F <span id="amount" class="amount3">0</span>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <div class="product-img">
+                              <div class="img-prdct">
+                                 <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYVFRgVFhUZGBgaGhgYGBkaGBoYGhgaGBoZGRoaGhgcIS4oHB4rIRwYJjgmKy80NTU1GiQ7QDszPy40NTEBDAwMEA8QHxISHzQrISsxNDQxNDQ0NDQ0NDQ0ND8xNDQ0NDQ0MTQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIAMsA+AMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAAAgMEBQYBB//EAEMQAAIBAgQCBwQGBwcFAQAAAAECAAMRBBIhMQVBBiJRYXGRoROBsdEUMkLB4fAHI1JicoKyFSRzkqLC8RYzQ1ODNP/EABoBAAIDAQEAAAAAAAAAAAAAAAIDAAEEBQb/xAAqEQACAgEDBAEDBAMAAAAAAAAAAQIRAxIhMQQiQVETMmFxI4Gh8QVikf/aAAwDAQACEQMRAD8A9cnYQgBBCEIRBQnROCdEhR0TsBCQoIQhLIEIQkIEIQkIEIQkIEIQkIEIQkIEIQkIEIQkIEIQkIEIQkIEIQkIEIQkINQnJ2AEEIQhEFCdESIoSFChElp0RJkIKDTsQIuWUEIQkIEIQkIEJydkIEIQkIEIQkIEIQkIEIQkIEIRipikU2LKD2FgD5SJWWk3wPwkb6dT/bXzEfRwwuCCO0ay2muSOLXKFQhCUUEIQkIMwhCAWEr+MYtqaBlNrtYm1+R+Unkyt4vSzoU03B1F9j2RuNxUlq4sCabg9PJR/wBv1teuP8o+UuuBcRermDkHLl1Atve4NvASpXghF7vy06vw60s+AYH2RfW98vIDt5+U253hcHoSsy4vl1LU3RdEzkIl2tOebROJqEIxXcAke6Ui4+oT9Y27gPuEt2a+krqHDQLXv5CJnGU94ujJ1OPI2tDHOGYti+UsTodD3S5JlXg8IEfN1tjva2vhLCo9ozHFxjUnYfTxlGNTduxeaR8c5FNiu4UnTeNGrHmIKkHYgjTeXdqkOnG4tFEldmtYt7yfvMl8KqkuVJJ0JOpM5hcAlgSHuLfatt5SVhMMqsWCsNLXLEjXuvFrBJSuzn4unmpqTfn2WUTmjWIqWkVKxJjXJI6VFjIPGKhWi7LcEDcbjUX9LyWh0jWOph0ZTexFtCR6iHF01fsCSuLRlaeIZranlzlhwqoTUtc8772tY/faS6fCaYt9bT99vnCnhFRiy5trXLMd+4ma8mWLi0kZIdPNSTbLYGdjOHbSPTEbTkxeMYmtV15kX1+6bQmVq8KplmYot2JP1V+UbikottjMWd4naV2Z0ghb3v4X++01HCh+qXvF/PWRcZwqmy5QoHeFT5SzpWyi2g7OyHlyKSVBZOoeVU1Q5CEJnEhCEJCDMDCBlFiTI7rcx5mjewvBbS3LrwMvFUntGme84GmdZnqsLRsWSteNVnjNOr2/kxsvdgI9zVbApD6DSLAi1Wdyy00kShucqnq3juWcK2kslFYasosV0sysVVAyg2BuQfGL6TYv2SMoOrHKPA6n0098xTNpFptcD4QUuTXp0wP/AK/9X4Rz/qpv2F/zH5TEB51mMvVPwxnww9HoOA497a6sAD9m2xHZrzk2lV1nm2FxZRgwOxvNth8TmUMNiAfOVqfkXLGlwauhUuJX47iiLzBGw13lLxjjXsMO7A9duovcTufcL+k829rmuxO5miLvcGGHVuzf1ekhzHrG3gNJO4ZxpX0Z7779k8ypvroSIrEVGB1Yn3kxngfKMKpI9owlcEXBBHaNQZODaTBdDMfmpZCdUNx/Cfxv5zXJWuBM7nGLqRklH0S894O8YV528CWZPgHSdnUfKe6JvBpUcnsjiTIRnDNcW7I9HJ3wUEIQlkGZwwvOEwAiPXaR3OkXiWjbnSY88t6GRQ0DFNEGdquLDwmNT2Y2hLPFUn1BkWo85QqehB9YeDK9VMkobF+rRwGMUzpHROkIHLxupFiN1JZDzvpm59oo7Gb+lPxmfqVBYS/6bDr3/eHqo+QmXqmUjRB7IdpPrLfiQT2aWWxsbnt1lBTbWX/FFP0ai3aH9G1hLguXKKCq82HAq16CHuPoxmHrtNZ0fc/R0/m/qaKm9i5cFZ0z4iCy0rm6gG411bUgjwy+soUY5QD5/kyNxvFB8Q7XuMxsewDT7pIxNVRYKTaw5HXQa7TTBVEpOkO4dzcWFzfUaC21rG+skcRVw3WAUche5t36n4yJwx7uBbc98v8ApZSCMhF82RSRbTKVsfUjzjku2xcpd1HOiGKyYhRfRwVPvFx6gT0+lsJ43warlrUz2Op9RPYcOdJx+ulUkTkmLFiMrFqYmE7AaHkAttG2nVbSJYx8pKkDQ9htzJEZwy6X7Y9NuJdqAfIQhCMKIl4Ezl4lmi9QZExJ1iC+k7iTrGs053UyaY2C2OMZx20iGM6T1due8wJvcdRGqNGaL6nwMVVkfDnrnwP3RmJ9yCa2NPhfqjUySPGQeHE5BqJME68X2oytbjoGkQ4igTaJaGCee9OxZ9Nup52qTJVF0HW7dxNf09WzDvC+mb5zHuptoL+8X8jKNGPgZTNfQr6y5xoqnD0izLk64UBdjcZtb68t7SjDkfZPlLbE4lzQQZGy3cj6u+l9L3G3ORPYN8opcQO8/CangVX9QhP73ozTJYgnuHrNLwR/1KfzD/UYE+CpGGRxnuTcE3v238ZPxOIU7AAd20gYlPZVWUahWIHeASBOvXDch5TXF7AFvwd+up7PPlL3pRWzMpv9gKe8d/55TM8Pp3OjlfCx+MtePk5haoWsqDXW2movfltD1doEl3WR8B9dLftL8Z7HhztPIeAIGrUwT9tfQieu0DtOL/kHbQSJyxxY2m0cUzPikBIU/ZvGxFv3QpC7CafqmkCS1FhaKhCdUUAhAQkIV94lp0TpEzhkSvGbD3yTiF0jC2t3zJ1EeLGwI7gzoZspXlvOuvfEqDObwx6IlYSNhmAfxB9/51kuusg3s6+MLG6kg3ujRcMfqywDSs4U2hHfLMTrw+lGSXI4rTjGCzpjUAYPp+uinu0/zLz98wznSb/p8Oovg3xQ/dMA79W1lI31F9bW3lPlmjFwNIdZZ1W/Vr75TgDs8iZYvTHsR1E+sesRdvDNuRIhrRVYhwOc0HBTain839Rmdr+XhpLvAA+wUfusPO8GXALMdiSvtW1updrHtFzaPOiHa49ZGwSBnAbQXF79knYmimYlRluSert5bD3TUlsKHcBgw7Bc+W+l7beZEexWFKMVzBtd/wAkxzguAzueuwCqzsVteygk2uN45xbBGm465YFQ1za/MEadhBEJrtsq96LbobSVq4uCWCkr2DYXPnPTqI2nmfQl2Fe3Io1/da3r8Z6ZQnC6yX6iTCXBPpjSOLG0jiwYLdAM7UPdadofWH55QqE9kTSPWHjHrbIvyD4J0IQnWEhCEJRCuWLiVi4tIMj4gaSCo13tLKoNDKwnUzJ1ke1MbjEOJxBOvEKZyTShmuJX1DZge8SfVMgYk85cdmEi84QdTLdR3yk4SesZdqO+dfH9JknyOIJ0icQTpE0IWY3p8P1a/wA39N/unnhAK6tY+GnmPdynpHTwfqR/Ef6HnmuW6/WA8b/ESpcj8XBHsb8vM/KWrBvo4+oBnPMk7dlpU2N/xEsxm+j7C2fcsL6rtaUhzKWv4y2wxP0fvyPb/VaU9f8ANvnLKkf7sf8ADf8A3QXwBIyWGQsQAbeMkNScd/gZHwiFmsN/G3K8ksjA6qRNQtFlw6o9iFDBtwbqB2a5iO3aGJrOzXcHNoNbWAHIWi+DO+cBHyk877eo+MZxJYsbtmPbrrLfBRp+gxIrPfb2f+5Z6XhmnmXQwnO5/dUeZPyno2Efaee6x/rP9hiXaWqGPLGKZjqmSEtxckOOTEU/rDxE6zXncOLt5zRF6siS9gtUibAQhOwIOGdhCUQr1i4yrRYaBFoMGlW5s0smaVlZrNM3V7wGY+RLiMMI+5H50jDWnGfJqiNVWF9JBxJ0k6pblIGMbSWuQkWXBXuw71E0aiZTgD9ZfD4G01iTsYN4mTJtIcWdInFijNCQoy3ThP7uT2MPXT755fluu48DcX9+3nPVumqXwz92Uj/Monk5W6728b284MuR+IjMDfb4GT1z+wNlOTMNTlAvbvN5AKm8mpRY0idLAjdlB1vyJuYKHsqaw/O8sKbgYZjyCP8A7pXVz338NZLX/wDK/wDA/wAWlPwBIzOFUk2BHvNvWSmRuY9RI2BCknN2Gwvl18f+JIdADoT7x94mkUuCy4TSZmsHVNDqdbaeIjbqQ24PpHOGYQuSBURTa+thfu1YRl1KtYtc67CFLgps1fRAHrt2lR5XP3zf4EbTA9C06rn94fCeiYEd0851e+Zj0+1FpRGkkLeMpHlHfCxKmJkxLmO4QanwjLSRg9iZp6ZXmTAl9JJgYCBnXEiYQMJRZQLih2iL+lr2iY1eIHtX1EPp57vOc9Zpejb8Br2xa/tCQalYM1rzPNjO8TuFxp9oguuptvrsYGTI5RpouOHTuaR37h5CR3aOMdOXnIrmc6XIaCo8r8U+kku2nbIWIbSXFbhEno9W/WKviPWbimdJ5t0bxYOLNM2+qT336pnpFJewzr4ODJm5HhFGJF4oiakJM/0wucNUAFyFzHuCkMT5AzyMVSF0Oht4EctOc9k6SpfDVwOdKp/QZ437IkEAi/2QTa/d5X9IMxuJ7kV7E7D3afCSqLKKbLkQkkHMwzMLdjE6DukN8w3Q+7WPUahKtZdrXBZVJv2KTdvdtFo0siVfLuEeep/dHIOwYeHW/GRayud+qPWNPi1XDOljcnTstdfkZH4/IEvP4KvBZutZQwt1hblcbcwfCAbX7uyIw6mxZSLi2l7NrzXt90Xn1s6m/O4II++aBCkW/Cnqg3RsgOmbPkty1N7290arrZ7F1cjcrcg+DG1/G0c4etEo4ak5JHVf2hUJbsWxzX7/AEkNcoawJ95hSXaDds9A6FUrUye1z6BfxnoGCGg1mE6E/wDZH8bfdN5hTPO5leZ/kdfaiesdv3RlTHM3fGxjQDYkmTcGOr7zIDtLHDDqL4TV0ke9v7ATew7OGdiTOkKOGEDCUWeNWPYZz2kWVf8ANog02/J/5nKUjsUJNQxoYkoyvfYg2vqbHXSPFO37z8JHrIPyPnLtFaWbiliAyhgbgi498aqVJi8LxV6NwozLvlJOh7jyj69JGsQ1PXlZtLd95llhbewvQ0aOpV75V4/GKiFidB6nsHfM9W4zWe4WyC52GY+Z09JCOZtWYse/X47RsMLW8i9LZY8E4gUxKVm0GfrbaK3V9Lg+6e1Yd7ieF01J5iangfSevhwFcCqgFgLhXUDazfaHcfObITSe4vNgk1cT1RYqYxOntK//AGK+3Yh17Pr+sruKdNqzjLQpmkObvlZ/AKLhfHWP+WKXJmWGbdUX3Tnii0MNUFxndHRF5ksMt7dgvcn5ieMLiS1gRbLv423/AD2y/wAQXcs73ZjuzEsx95Mo69PW4XWLeXUzRDA4rbk7nMl0cU4UqGIB3GYgHbeVwe29x7rwFUa6nyOsJUW0ztc3vK2vRYobA2kwnNve0loi5bfL5wXOiKDkZVBHMxJ1Y68ySZZ4vhwPWQ2PZpaV7YdxqVM0RnFmeWOUSxwBCElwXHNASgOltWU5hy2kd3GYkKFHYL/Ekkxlaj2IXML6G19ZLweFLm76Ds5nxhznFRAjjk3sbvoVixkyX1Ug+5tfjeb7BVdJ5dhWyEMrZSBa+u3ZY8prsBxtCOs2U877e4ziTj3uSHzxtLY2KPHS4tvrKjD4wMoYEEHUEGPnEgC5NhzuZFJIRTJNWpaR+BcQIdkZuq5JTQjKSdrntlFi+No5yIb9rcrd3bGVqd4v5R+GTi9Q6OK4tM9JiTK3gvERWTU9ZbBu/sb3/OWM6cZKStGRpxdMDOQMJCHjjDv9JwJ23nc5/N5xnacfc7gFB3/n3Ripl7SZquhWCWrUqNUGb2YUqpGhLX1sdyMvrEY7pJhsTTqUsTR9i4B9kQrOytrbZQQQQL8je0bHFcbbqxEs1S0qN1yYxlHbGXTvHxnoHROutLh1WsaauyVG0IGulMWvY23vK3HdNA6PTGEpqXVlzhwSuZSM1sg1F77y3jUUm3yr4IsspNpRunXJjgu40vO5bcrT0/o5wmjX4alNwAX9oA1hmDCo5Ug8yLbdgttM70T4c1LiAoVVBKZwQRcHqkhhfcEWIhfG9vTIs0e5Vur/AHoylJR+bffJ9K3b6R7jyAYmvYAAVXAAH7x0A5RgNYaeW8W9nQ1bpMkp4gxwkzRccpKOH4VgoDMUuQACf1bnUjed6YUUSjhSqqpZDmIUKW6tPew13PnGOFJ/ZL+RKy20q5bX/DLVr2/4lO5AO494M3uCwyHhmIcqpYM1msCw0p7G1xufOHCVpYTALi2oitUdrEnZQSyjUg5BYa2GpNvC1jb3vxZPnq1W90eekjtHrFBf4djz/CanpNj8HXSnVohUrE2qIqkCxB1zZQrEEDUakHXbTOLUT8j5GBJ6XS3HQeuNtURMvh5j5RWUgbL5rNx0jwdMcOwbrTUM2S7BQGa9JjqRqffKbovwT6VXWmwKoAWc88q2FgbbkkDzPKW4vUo+ylOLi5PZK/4M6DysvmLzuQcwJ6LiukODwzmhRwSOikozEAXK6G11Yv4k6+sjdJOFYeph1xuFUKtwKiWy5btluFF8rBrAgaEG/iTit6d1yKWV2tUaT4ZhVpC18vwjii32T5CbfgPCsNQw303FJnBP6umQDfUhTl0BY2J10AF/BX/U2BrBlrYJVFjkKBS17aC4VSpPcSO2TTtu6J8jtqMW0jH0/DzEkK/5tHeHYL2tRKa6F2CjmQDzJsL2Gt+6aHpnwlMPWRlGVaigADbMgCkeWQ+JMVpbi5eEHKaUlHyyjpVSNiR4afCKzXuTr4zSYXCUv7NerkXMHsHyjMB7RRa++xInehmFpVarqyI4FO4DLexzLrYiRY7aXsW8iUXKuHRnKDjMPwlkH8JP6MPQLvQqojZiQjFVzKx0yhrXF+XYfGWeA6O5armtb2VPrZm2cbi/cBv4WjYQbSr+gZ5VFtP+yr4VxI0qgYA22YftKd56DSqh1DKbggEHtBnnXEMQj1CyKqrsoVQug5tbmfw5S+6McRyn2LHQ6r3Hmvv+PjG4pqMtPgTmxuUdfk1JhOGE1GQ8aXEA/YPpHFseXlGKW50G/YO6OrOO0dwtOj1PEtUdsKyBkALh2tmVr2UKAc21+X2ddZo8NXfG4euuKohMikq+Rks2ViSoe5BWwvrbW0wXAcdUp1EdHIYsVJ0NwTqCDpNf094jVFNEDkK5IcADrDsJte02Y9sd+uTDlTeRL3wxXRLFvR4dUqImd1qEhbFsxPswdF1OhMpuPdIMViKLU6mFKrcMzCm4sF13JIA8ZO6FY6olAhWsPaNpZexe6W3GeIVGw1cFrg0avJf2G7obVwX4FuWjI01bvkqHrMnBqTqSrLVzKRoQRWcgiaHgFWnjDRxYstamGSoO26kW8LnMD2EjwxeKrH+yqaX6uc6f/VzvvIPQDG1ExbBWIDUmzDcHKQRe/ifMwYy7lH7IOULg5ebYjpBf6XXt/wC2psR+0e+N4Wm7aIjMdyArMey+l+0SLxuq30nEG/8A5qn9Rmh/R9XYYhrH/wATd/207YnTc6+5o1OOP9i76SKRw/CoVKtdbqQbjqPe45bjziumFJnw+FdFLKqalQSBmVMpNthoZlOlPFKtTEOruSEuFGgC3ttYTUfo2x9RmekzkoouqnkSTsd7d0eqba97GfeMFPyrZzD0mThNfOCuZiVDdW4JpqND3gyu4HjMbhMMKqotTDsTZCcxS5IJBB6ouDcG4v2XMP0jcQqGqKec5AAwUaC9jqbb++O/ot4hUL1aJcmmFDhTY2Y7kE6+7aTTUkvSI21ic2uXZzpvhab4ehixSWjUcqGUi18ys2thqRl0NtjrymLBH7S+vyl3+krHVHxnsmYlEW6roACdzpufGZUrcfiYvLFORo6e1BHpPSKmW4bggoLaUz1VZtPZNrZRoNY1+juuKeIam4ytUQ5bqyklDewzDXTMf5Zr+ibn6Fhv8Gn/AEiYf9JlQjFUnBIZaKspBIIIqPqLRssdNS/Bnhk1asVe9zP8V4XUoVWpMpBDEKbNZxfqsptrcW28JrThTheEOlUZXrvcIxsRnK6a7HKpa3Ka/onjHrYZKlRszEamwF9OwC08s6X46pVxLB3LBCyoNgo12A56DXfQQXFQVryWsjyNRfj+TTcQwjYnhWH9jdmolQyrqxyI1NtOZ1DeBmQweCquSEpMxUEtZb2A3v2S06D46pTxKU0YhKjAOu4NgeR2PeNZ6L0yxj0cK9Sk2VgNDYH4iVoWSKbLeZ4Xp+9mY/R3gizvXKaIMq2tqzDW3eF/rlrxLB1q2CY10y1abNUAzK11uSbFSdMrEW/dErKVd6XBzUpsyuWzFwSGJatlJvvtpEfo44nWrVa61ar1FCaBmLW1tzlwilHR7QvJJubn6ZLwILcLqBVzEOSVGp0dWPprOdAkPtKjZTlC5c1tLkg2v4CQug9dlxT0lJCEEldxcaA6zSdNsS9OgMjZcxytbmDy7pUYqlP0iTk03D27MZwzANXrBVG5zFrfVW+rafm9pveJZa9OpQpuS6Zbi9sxGtied+dtjKfoeuXCV6g0fr9bn1VuvleU3R+swxFIgm7MAx3uG3veTG6jXsvJ3Sf+pDdSDaxBFwQRqCOUEqkbEgjaw2tzlz0wQLiNBbMqk951F5RM57YqSqVGiL1RT9noXA+JivTBP110Yba/tW7D852ZLonVIxAF9CGuO3nCaseRtGLJjUZUf//Z">
+                              </div>
+                           </div>
+                        </td>
+                        <td>
+                           <p>Jus locaux</p>
+                        </td>
+                        <td>
+                           <div class="button-container">
+                              <button class="cart-qty-plus" type="button" value="+" onclick="increment4()">+</button>
+                              <input type="text" name="qty" min="0" class="qty4 form-control" value="0"/>
+                              <button class="cart-qty-minus" type="button" value="-" onclick="decrement4()">-</button>
+                              
+                           </div>
+
+                           <div class=" pt-3 text-center">
+                            <a class="heart" id="heart4" onclick="change4()"><i class="far fa-heart"></i></a>
+                           </div>
+                        </td>
+                        <td>
+                           <input type="text" value="1500" class="price4 form-control" disabled>
+                        </td>
+                        <td align="right">F <span id="amount" class="amount4">0</span>
+                        </td>
+                     </tr>
+                    
+                    <!---- add more tr  ---------->
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <td colspan="4"></td>
+                        <td align="right">
+                            <strong> <p class="totalcolor">TOTAL = F</p>  <span id="total" class="total">0</span>
+                            </strong>
+                        </td>
+                    </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+    <script  src="boissons.js"></script>
+</body>

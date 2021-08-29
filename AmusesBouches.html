@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+     
+    
+    <link rel="stylesheet" href="AmusesBouches.css">
+    <title>Nos amuses bouches</title>
+</head>
+<body>
+    <div class="container-fluid mt-5">
+        <h2 class="mb-5 text-center"> Êtes  vous prêt  à amuser votre bouche ?Miamm!</h2>
+        <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="table-responsive">
+                <table id="myTable" class="table">
+                    <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Name</th>
+                        <th>Qty</th>
+                        <th>Price</th>
+                        <th class="text-right">
+                            <span id="amount" class="amount">Amount</span>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr id="tr1">
+                        <td>
+                            <div class="product-img">
+                                <div class="img-prdct">
+                                    <img src="https://img.cuisineaz.com/610x610/2016/04/28/i84649-amuses-bouche-au-boursin-et-noisettes.jpg" alt="">
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <p>boursin et noisette</p>
+                        </td>
+                        <td>
+                            <div class="button-container" id="btn-ctn1">
+                                <button class="cart-qty-plus" type="button" value="+" onclick="increment1()">+</button>
+                                <input type="text" name="qty" min="0" class="qty1 form-control" value="0"/>
+                                <button class="cart-qty-minus" type="button" value="-" onclick="decrement1()">-</button>
+                            </div>
+                            <div class=" pt-3 text-center">
+                                <a class="heart" id="heart1" onclick="change1()"><i class="far fa-heart"></i></a>
+                               </div>
+                        </td>
+                        <td>
+                            <input type="text" value="1200" class="price1 form-control" disabled>
+                        </td>
+                        <td align="right">F <span id="amount" class="amount1">0</span>
+                        </td>
+                    </tr>
+                    <!---- add more tr  ---------->
+                    <tr>
+                        <td>
+                           <div class="product-img">
+                              <div class="img-prdct">
+                                 <img src="https://dam.savencia-fromagedairy.com/m/9f1853cba01c963/TH04_470x470-TH04_amuse-bouche-au-jambon-et-fromage-ail-et-fines-herbes_adobe.jpg">
+                              </div>
+                           </div>
+                        </td>
+                        <td>
+                           <p> jambon-fromage-fines herbes</p>
+                        </td>
+                        <td>
+                           <div class="button-container">
+                              <button class="cart-qty-plus" type="button" value="+" onclick="increment2()">+</button>
+                              <input type="text" name="qty" min="0" class="qty2 form-control" value="0"/>
+                              <button class="cart-qty-minus" type="button" value="-" onclick="decrement2()">-</button>
+                           </div>
+
+                           <div class=" pt-3 text-center">
+                            <a class="heart" id="heart2" onclick="change2()"><i class="far fa-heart"></i></a>
+                           </div>
+                        </td>
+                        <td>
+                           <input type="text" value="1500" class="price2 form-control" disabled>
+                        </td>
+                        <td align="right">F <span id="amount" class="amount2">0</span>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <div class="product-img">
+                              <div class="img-prdct">
+                                 <img src="https://media-cdn.tripadvisor.com/media/photo-s/0d/8e/e7/57/amuses-bouches-pour-les.jpg">
+                              </div>
+                           </div>
+                        </td>
+                        <td>
+                           <p>nos buffets</p>
+                        </td>
+                        <td>
+                           <div class="button-container">
+                              <button class="cart-qty-plus" type="button" value="+" onclick="increment3()">+</button>
+                              <input type="text" name="qty" min="0" class="qty3 form-control" value="0"/>
+                              <button class="cart-qty-minus" type="button" value="-" onclick="decrement3()">-</button>
+                              
+                           </div>
+
+                           <div class=" pt-3 text-center">
+                            <a class="heart" id="heart3" onclick="change3()"><i class="far fa-heart"></i></a>
+                           </div>
+        
+                        </td>
+                        <td>
+                           <input type="text" value="15000" class="price3 form-control" disabled>
+                        </td>
+                        <td align="right">F <span id="amount" class="amount3">0</span>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <div class="product-img">
+                              <div class="img-prdct">
+                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC3IQs-n5XlcFV75whtW1tLebMy_62WzgGwChUq6K7_jAh6byl2rFgJops76iPXAF2ZUY&usqp=CAU">
+                              </div>
+                           </div>
+                        </td>
+                        <td>
+                           <p>saumon au fromage frais</p>
+                        </td>
+                        <td>
+                           <div class="button-container">
+                              <button class="cart-qty-plus" type="button" value="+" onclick="increment4()">+</button>
+                              <input type="text" name="qty" min="0" class="qty4 form-control" value="0"/>
+                              <button class="cart-qty-minus" type="button" value="-" onclick="decrement4()">-</button>
+                              
+                           </div>
+
+                           <div class=" pt-3 text-center">
+                            <a class="heart" id="heart4" onclick="change4()"><i class="far fa-heart"></i></a>
+                           </div>
+                        </td>
+                        <td>
+                           <input type="text" value="3000" class="price4 form-control" disabled>
+                        </td>
+                        <td align="right">F <span id="amount" class="amount4">0</span>
+                        </td>
+                     </tr>
+                    
+                    <!---- add more tr  ---------->
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <td colspan="4"></td>
+                        <td align="right">
+                            <strong>TOTAL = F  <span id="total" class="total">0</span>
+                            </strong>
+                        </td>
+                    </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+    <script  src="AmusesBouches.js"></script>
+</body>

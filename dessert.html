@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+     
+    
+    <link rel="stylesheet" href="dessert.css">
+    <title>Nos desserts</title>
+</head>
+<body>
+    <div class="container-fluid mt-5">
+        <h2 class="mb-5 text-center">Un monde de plaisir à découvrir !!!</h2>
+        <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="table-responsive">
+                <table id="myTable" class="table">
+                    <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Name</th>
+                        <th>Qty</th>
+                        <th>Price</th>
+                        <th class="text-right">
+                            <span id="amount" class="amount">Amount</span>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr id="tr1">
+                        <td>
+                            <div class="product-img">
+                                <div class="img-prdct">
+                                <img src="https://www.oetker.be/Recipe/Recipes/oetker.be/be-fr/dessert/image-thumb__19072__RecipeDetailsLightBox/dessert-au-chocolat.jpg"width="200px">
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <p>Chocolat</p>
+                        </td>
+                        <td>
+                            <div class="button-container" id="btn-ctn1">
+                                <button class="cart-qty-plus" type="button" value="+" onclick="increment1()">+</button>
+                                <input type="text" name="qty" min="0" class="qty1 form-control" value="0"/>
+                                <button class="cart-qty-minus" type="button" value="-" onclick="decrement1()">-</button>
+                            </div>
+                            <div class=" pt-3 text-center">
+                                <a class="heart" id="heart1" onclick="change1()"><i class="far fa-heart"></i></a>
+                               </div>
+                        </td>
+                        <td>
+                            <input type="text" value="1500" class="price1 form-control" disabled>
+                        </td>
+                        <td align="right">F <span id="amount" class="amount1">0</span>
+                        </td>
+                    </tr>
+                    <!---- add more tr  ---------->
+                    <tr>
+                        <td>
+                           <div class="product-img">
+                              <div class="img-prdct">
+                                 <img src="https://www.glaces-bargeton.fr/userfiles/12017/Refont%2014.07.2020/Bandeau/vb001.jpg">
+                              </div>
+                           </div>
+                        </td>
+                        <td>
+                           <p> Les glaces</p>
+                        </td>
+                        <td>
+                           <div class="button-container">
+                              <button class="cart-qty-plus" type="button" value="+" onclick="increment2()">+</button>
+                              <input type="text" name="qty" min="0" class="qty2 form-control" value="0"/>
+                              <button class="cart-qty-minus" type="button" value="-" onclick="decrement2()">-</button>
+                           </div>
+
+                           <div class=" pt-3 text-center">
+                            <a class="heart" id="heart2" onclick="change2()"><i class="far fa-heart"></i></a>
+                           </div>
+                        </td>
+                        <td>
+                           <input type="text" value="1000" class="price2 form-control" disabled>
+                        </td>
+                        <td align="right">F <span id="amount" class="amount2">0</span>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <div class="product-img">
+                              <div class="img-prdct">
+                                 <img src="https://cdn.chefclub.tools/uploads/recipes/cover-hd/899faf53-834d-44aa-ad08-c27538099cae_w5wjfdD.jpg">
+                              </div>
+                           </div>
+                        </td>
+                        <td>
+                           <p>Les gateaux </p>
+                        </td>
+                        <td>
+                           <div class="button-container">
+                              <button class="cart-qty-plus" type="button" value="+" onclick="increment3()">+</button>
+                              <input type="text" name="qty" min="0" class="qty3 form-control" value="0"/>
+                              <button class="cart-qty-minus" type="button" value="-" onclick="decrement3()">-</button>
+                              
+                           </div>
+
+                           <div class=" pt-3 text-center">
+                            <a class="heart" id="heart3" onclick="change3()"><i class="far fa-heart"></i></a>
+                           </div>
+        
+                        </td>
+                        <td>
+                           <input type="text" value="12000" class="price3 form-control" disabled>
+                        </td>
+                        <td align="right">F <span id="amount" class="amount3">0</span>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <div class="product-img">
+                              <div class="img-prdct">
+                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc03AyK-x3ozodKI2ORVF35B1XdFdXMPdlY6TrYGXyrtF2nLU5m4rJbirchu5-rDnby0c&usqp=CAU">
+                              </div>
+                           </div>
+                        </td>
+                        <td>
+                           <p>les patisseries </p>
+                        </td>
+                        <td>
+                           <div class="button-container">
+                              <button class="cart-qty-plus" type="button" value="+" onclick="increment4()">+</button>
+                              <input type="text" name="qty" min="0" class="qty4 form-control" value="0"/>
+                              <button class="cart-qty-minus" type="button" value="-" onclick="decrement4()">-</button>
+                              
+                           </div>
+
+                           <div class=" pt-3 text-center">
+                            <a class="heart" id="heart4" onclick="change4()"><i class="far fa-heart"></i></a>
+                           </div>
+                        </td>
+                        <td>
+                           <input type="text" value="500" class="price4 form-control" disabled>
+                        </td>
+                        <td align="right">F <span id="amount" class="amount4">0</span>
+                        </td>
+                     </tr>
+                    
+                    <!---- add more tr  ---------->
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <td colspan="4"></td>
+                        <td align="right">
+                            <strong>TOTAL = F  <span id="total" class="total">0</span>
+                            </strong>
+                        </td>
+                    </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+    <script  src="dessert.js"></script>
+</body>

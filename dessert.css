@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url(https://voyage-onirique.com/wp-content/uploads/2018/05/Alinka-Shemeluyk_Sweets_YkxmSWdYdw.jpg);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+i {
+    margin-right: 10px;
+}
+
+
+input:focus,
+button:focus,
+.form-control:focus{
+    outline: none;
+    box-shadow: none;
+}
+.form-control:disabled, .form-control[readonly]{
+    background-color: #fff;
+}
+.table tr,
+.table tr td{
+    vertical-align: middle;
+}
+.button-container{
+    display: flex;
+    align-items: center;
+}
+.button-container .form-control{
+    max-width: 80px;
+    text-align: center;
+    display: inline-block;
+    margin: 0px 5px;
+}
+#myTable .form-control{
+    width: auto;
+    display: inline-block;
+}
+.cart-qty-plus,
+.cart-qty-minus{
+    width: 38px;
+    height: 38px;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+.cart-qty-plus:hover,
+.cart-qty-minus:hover{
+    background-color:palevioletred;
+    color: #fff;
+}
+.img-prdct{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 4px;
+}
+.img-prdct img{
+    width: 150%;
+}
+
+thead tr{
+    background-color : white;
+    color: white;
+}
+.img-prdct{
+    width:100px !important;
+    height:100px !important;
+}
+.cart-qty-plus{
+    background-color:pink;
+    color:white;
+    font-weight: 600;
+}
+.cart-qty-minus{
+    background-color:pink;
+    color:white;
+    font-weight: 600;
+}
+th{
+    color: palevioletred;
+}
+.total{
+    font-weight: bold;
+    
+}
+h2{
+    color: palevioletred;
+}
+.amount1,.amount2,.amount3,.amount4{
+    font-weight: bolder;
+}
+p{
+    color: palevioletred;
+    font-weight: bold;
+    text-align: center;
+}
+
