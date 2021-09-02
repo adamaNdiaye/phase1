@@ -7,6 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+  
+  </style>
     <link rel="stylesheet" href="projet.css">
     <title>Cuisine Katissa</title>
 </head>
@@ -69,13 +76,13 @@
                                     <p>Remplissez le formulaire ci-dessous pour les réservations 24h à l'avance, sous réserve de confirmation.
                                     Ou par les téléphones 783719758 ou 768190838</p>
 
-                                   <form action="/action_page.php">
+                                   <form action="/action_page.php" id="inscription">
                                     <div class="row">
                                         <div class="col">
                                           <input type="text" class="form-control" id="Nom" placeholder="Entrer votre nom" name="Nom">
                                         </div>
                                         <div class="col">
-                                          <input type="Télephone" class="form-control" placeholder="Entrer votre numéro" name="Télephone">
+                                          <input type="Télephone" class="form-control" id="telephone" placeholder="Entrer votre numéro" name="Télephone">
                                         </div>
                                       </div>
                                 
@@ -97,6 +104,7 @@
                                 
                                 
                                   </form>  
+                                  <p style="color: red;" id="erreur"> </p>
                                     <div class="pt-3">
                                         <p>
                                             Les informations demandées dans ce formulaire sont destinées à notre équipe pour confirmer votre réservation à Cuisine Katissa.
@@ -115,6 +123,8 @@
 
             </main>
             <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+            <script  src="projet.js"></script>
+            <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
     
 </body>
 </html>
