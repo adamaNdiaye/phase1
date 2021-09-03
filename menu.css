@@ -7,12 +7,13 @@ body{
     padding: 0;
 }
 
-.vertical li{
+.horizontal li{
     display: inline-table;
 }
 .jumbotron{
-    background-image: url(https://voyage-onirique.com/wp-content/uploads/2018/09/722739.jpg);
+    background-image: url(http://chezcolombes.com/wallpaper/data/media/20/Food_icons.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 nav a{
     color: white;
@@ -22,7 +23,7 @@ a:hover{
     color : brown;
 }
 h1{
-    color: brown;
+    color :yellow;
     font-size: 25px;
     text-align: center;
     font-family: Georgia, serif;
@@ -37,6 +38,9 @@ h1{
 .white{
     color: black;
     font-weight: bolder;
+    background-color: tomato;
+    border-radius: 20px ;
+    
     
 }
 .déj{
@@ -65,4 +69,7 @@ h1{
 }
 h4{
     color: black;
+}
+.color{
+    color: maroon;
 }

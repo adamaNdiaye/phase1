@@ -2,13 +2,24 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    background-image: url(https://img.freepik.com/photos-gratuite/assiette-pates-aux-tomates-ardoise_23-2148357203.jpg?size=626&ext=jpg);
+    background-image: url(https://img.wallpapic.fr/i0220-129-43/thumb/fast-food-aliments-snack-gingembre-fond-d-ecran.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 * {
     margin: 0;
     padding: 0;
+}
+.horizontal li{
+    display: inline-table;
+}
+nav a{
+    color:black;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    color : chocolate;
 }
 i {
     margin-right: 10px;
@@ -52,7 +63,7 @@ button:focus,
 }
 .cart-qty-plus:hover,
 .cart-qty-minus:hover{
-    background-color:black;
+    background-color:brown;
     color: #fff;
 }
 .img-prdct{
@@ -74,21 +85,23 @@ thead tr{
     height:100px !important;
 }
 .cart-qty-plus{
-    background-color:blue;
+    background-color :black;
     color:white;
     font-weight: 600;
 }
 .cart-qty-minus{
-    background-color:blue;
+    background-color :black;
     color:white;
     font-weight: 600;
 }
 p{
     text-align: center;
-    color: white;
+    color: black;
+    font-weight: bolder ;
 }
 h2{
-    color:white;
+    color:black;
+    font-weight: bold;
 }
 .amount1,.amount2,.amount3,.amount4{
     color: white;

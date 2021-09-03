@@ -7,8 +7,9 @@ body{
     padding: 0;
 }
 .jumbotron{
-    background-image: url(https://voyage-onirique.com/wp-content/uploads/2018/09/722737.jpg) ;
-    background-repeat: no-repeat;
+    background-image: url(https://voyage-onirique.com/wp-content/uploads/2021/03/488180.jpg) ;
+    background-size: cover;
+    
     
     
 }
@@ -21,8 +22,10 @@ h1{
 }
 
 .paragraphe{
-    color:white;
+    color : black;
     font-weight: bold;
+    
+    
 }
 nav a{
     color:white;
@@ -38,8 +41,8 @@ a:hover{
     display: inline;
 }
 h1{
-    color: brown;
-    font-size: 30px ;
+    color :maroon;
+    font-size: 70px ;
     text-align: center;
 }
 .jumbotron2{
@@ -47,4 +50,9 @@ h1{
 }
 .margin{
     margin-left: 30px;
+}
+.border{
+    border-radius: 15px;
+    padding-top:5px;
+    padding-bottom: 5px;
 }
