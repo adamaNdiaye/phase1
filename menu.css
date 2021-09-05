@@ -73,3 +73,12 @@ h4{
 .color{
     color: maroon;
 }
+.btn{
+    color: white;
+    background-color: tomato;
+    border: black;
+    
+}
+.btn :hover{
+    color: black;
+}

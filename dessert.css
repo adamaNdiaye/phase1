@@ -2,19 +2,19 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-   background-image: url(https://i.pinimg.com/originals/de/0c/7c/de0c7c1218f8e4a3116154a00619a216.jpg);
+   background-image: url(https://thumbs.dreamstime.com/z/magdalena-del-cumplea%C3%B1os-50199858.jpg);
    background-size: cover;
 }
 .horizontal li{
     display: inline-table;
 }
 nav a{
-    color:black;
+    color:white;
     text-decoration: none;
     font-weight: bolder;
 }
 a:hover{
-    color : chocolate;
+    color : darkturquoise;
 }
 * {
     margin: 0;
@@ -62,7 +62,7 @@ button:focus,
 }
 .cart-qty-plus:hover,
 .cart-qty-minus:hover{
-    background-color:palevioletred;
+    background-color :white;
     color: #fff;
 }
 .img-prdct{
@@ -84,12 +84,12 @@ thead tr{
     height:100px !important;
 }
 .cart-qty-plus{
-    background-color :cornflowerblue;
+    background-color :darkturquoise;
     color:white;
     font-weight: 600;
 }
 .cart-qty-minus{
-    background-color :cornflowerblue;
+    background-color : darkturquoise;
     color:white;
     font-weight: 600;
 }
@@ -101,7 +101,7 @@ th{
     
 }
 h2{
-    color :darkred;
+    color :white;
     font-weight: bolder;
 }
 .amount1,.amount2,.amount3,.amount4{

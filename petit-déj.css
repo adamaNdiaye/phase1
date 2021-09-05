@@ -17,7 +17,7 @@ nav a{
     font-weight: bolder;
 }
 a:hover{
-    color : brown;
+    color : chocolate;
 }
 i {
     margin-right: 10px;
@@ -61,7 +61,7 @@ button:focus,
 }
 .cart-qty-plus:hover,
 .cart-qty-minus:hover{
-    background-color:black;
+    background-color: chocolate;
     color: #fff;
 }
 .img-prdct{

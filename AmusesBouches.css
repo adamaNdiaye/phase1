@@ -2,7 +2,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    background-image: url(https://c8.alamy.com/compfr/x3mk6c/divers-petits-aperitifs-amuse-bouche-egalement-connu-sous-le-nom-de-amuse-gueule-haute-cuisine-x3mk6c.jpg);
+    background-image: url(https://images.ctfassets.net/3s5io6mnxfqz/7oQEtgEq0S8JS4ba3uND1N/ea9939730789f240f70a09cf09f39e3c/AdobeStock_193681211.jpeg) ;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -14,12 +14,12 @@ body{
     display: inline-table;
 }
 nav a{
-    color:black;
+    color:tomato;
     text-decoration: none;
     font-weight: bolder;
 }
 a:hover{
-    color : white;
+    color : black;
 }
 i {
     margin-right: 10px;

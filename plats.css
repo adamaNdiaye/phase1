@@ -2,7 +2,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    background-image: url(https://img.wallpapic.fr/i0220-129-43/thumb/fast-food-aliments-snack-gingembre-fond-d-ecran.jpg);
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-fried-chicken-leg-promotion-poster-background-image_182385.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -14,12 +14,12 @@ body{
     display: inline-table;
 }
 nav a{
-    color:black;
+    color:white;
     text-decoration: none;
     font-weight: bolder;
 }
 a:hover{
-    color : chocolate;
+    color :darkorange;
 }
 i {
     margin-right: 10px;
@@ -63,7 +63,7 @@ button:focus,
 }
 .cart-qty-plus:hover,
 .cart-qty-minus:hover{
-    background-color:brown;
+    background-color : black;
     color: #fff;
 }
 .img-prdct{
@@ -85,22 +85,22 @@ thead tr{
     height:100px !important;
 }
 .cart-qty-plus{
-    background-color :black;
-    color:white;
+    background-color : darkorange;
+    color: white;
     font-weight: 600;
 }
 .cart-qty-minus{
-    background-color :black;
+    background-color :darkorange;
     color:white;
     font-weight: 600;
 }
 p{
     text-align: center;
-    color: black;
+    color: white;
     font-weight: bolder ;
 }
 h2{
-    color:black;
+    color:white;
     font-weight: bold;
 }
 .amount1,.amount2,.amount3,.amount4{
